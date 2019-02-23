@@ -20,8 +20,8 @@ typedef struct fighter
 
 // Reads from one of the name files to find a random first or last name for a given fighter.
 //
-// NOTE: This function currently has a memory leak (name not freed before return). This will be
-// fixed soon.
+// NOTE: This function has not been vetted thoroughly for memory leaks yet. While in development, I am more interested
+// in getting some aspects of the program working before tackling memory leaks. It is first on my to-do list, though.
 char *setName(char *filename)
 {
 	FILE *ifp = fopen(filename, "r");
@@ -131,8 +131,7 @@ void fillFighterCards(fighter **card)
 }
 
 // Creates enough space in memory to generate 10 random fighters.
-// NOTE: This memory currently has a memory leak (fighters not freed before return) which will
-// be fixed at a later date.
+// NOTE: This function has not been properly vetted for memory leaks yet.
 fighter **generateFighters(void)
 {
 	fighter **fighters = malloc(sizeof(fighter *) * 10);
