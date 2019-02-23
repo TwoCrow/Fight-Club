@@ -4,8 +4,7 @@ An independent project that generates random fighters that fight against one ano
 PLEASE NOTE
 ---
 This program is HORRIBLY UNFINISHED. It's just a fun little project that I started working on in my spare time. In its current state,
-it has at least two memory leaks. I am ignoring these for now in the interest of having the program working for a single, less-complex
-task: generating the fighters.
+it is very unfinished, and I don't doubt that I am causing a memory leak somewhere. I am ignoring these for now in the interest of having the program working for a single, less-complex task: generating the fighters.
 
 As I work on the program, I will update the code here and update this readme to reflect these changes.
 
